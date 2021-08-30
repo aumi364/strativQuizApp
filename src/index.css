@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form-group input.form-control {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent !important;
+  outline: none;
+  border-radius: 0;
+  color: white !important
+}
+
+.form-group input.form-control:focus {
+  border-bottom: 2px solid rgb(20, 161, 91);
+  box-shadow: none;
+}
+
+.btn.cbtn {
+  background: linear-gradient(rgb(102, 211, 113), rgb(43, 165, 74));
+  color: white;
+  padding: .25rem;
 }

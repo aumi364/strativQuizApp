@@ -1,0 +1,15 @@
+.question {
+    padding: 1rem;
+    margin: .5rem;
+    box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.2);
+    transition: all 1s ease-in-out;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 500px;
+}
+
+.question:hover {
+    box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.4);
+}

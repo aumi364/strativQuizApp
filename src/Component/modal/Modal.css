@@ -1,0 +1,74 @@
+.cmodal {
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+
+
+}
+
+.cmodal-backdrop {
+    display: flex;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+}
+
+.cmodal-body {
+    overflow-y: auto;
+    max-width: 70%;
+    /* Full width */
+    max-height: 70%;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.cmodal-close {
+    text-align: right;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cmodal-close-button {
+    height: auto;
+    width: auto;
+    transition: all .5s ease-in-out;
+    padding: .6rem;
+    border-radius: 50%;
+}
+
+.cmodal-close-button:hover {
+    background: rgb(241, 241, 241);
+
+}
+
+.cmodal-close-button svg {
+    font-size: 1.5rem;
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+
+}
+
+/* .cmodal-close svg:hover {
+    color: rgb(170, 165, 165);
+
+} */
+
+.cmodal-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}

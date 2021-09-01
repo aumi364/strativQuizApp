@@ -1,0 +1,29 @@
+.questions {
+    box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.2);
+}
+
+.questions-container {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media(min-width : 900px) {
+    .questions-container {
+        min-height: calc(100vh - 90px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .questions {
+        padding: 1rem 2rem;
+    }
+
+    .text-right {
+        align-self: flex-end;
+    }
+}

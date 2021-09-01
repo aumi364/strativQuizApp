@@ -7,9 +7,16 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
-    max-width: 500px;
+
 }
 
 .question:hover {
     box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.4);
+}
+
+@media(min-width : 900px) {
+    .question {
+        min-width: 400px;
+        max-width: 500px;
+    }
 }

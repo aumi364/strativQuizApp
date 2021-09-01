@@ -1,6 +1,6 @@
 import Answers from "Pages/Answers/Answers";
 import NoMatch from "Pages/Error/NoMatch";
-import Questions from "Pages/Questions/Questions";
+import Questions from "Pages/Questions/";
 import SignIn from "Pages/SignIn/SignIn";
 import React from "react";
 import { Switch, Route } from "react-router-dom";

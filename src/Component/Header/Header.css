@@ -1,0 +1,26 @@
+.header {
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    background: rgb(19, 91, 150);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.cnav-link {
+    color: white;
+    padding: 0 .25rem;
+}
+
+.cnav-link:hover {
+    color: rgb(175, 199, 182);
+    outline: none;
+    text-decoration: none;
+}
+
+.cnav-link:focus {
+    color: rgb(176, 230, 89);
+}

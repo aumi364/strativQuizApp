@@ -39,8 +39,11 @@ div.form-group {
   background: linear-gradient(rgb(102, 211, 113), rgb(43, 165, 74));
   color: white;
   padding: .25rem;
-  margin-top: .5rem;
+  margin-top: 1rem;
+}
 
+.btn.cbtn:active {
+  background: linear-gradient(rgb(102, 211, 113), rgb(43, 165, 74)) !important;
 }
 
 .icon-group {

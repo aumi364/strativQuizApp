@@ -4,25 +4,25 @@ import { useForm } from "react-hook-form";
 import QuestionsContext from "Context/QuestionsContext";
 import useService from "Services/useService";
 import FormQuestion from "Pages/Questions/FormQuestion";
-const EditModalQuestion = ({ closeModal, questionObj }) => {
-  const { editQuestion } = useService();
+const AddModalQuestion = ({ closeModal, questionObj }) => {
+  const { addQuestion } = useService();
   const { toggle, setToggle } = useContext(QuestionsContext);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
-    editQuestion(questionObj.id, data.question);
+    addQuestion(data.question);
     setToggle(!toggle);
     closeModal();
   };
   return (
     <Modal closeModal={closeModal}>
       <FormQuestion
-        prevValues={questionObj}
         register={register}
         onSubmit={onSubmit}
         handleSubmit={handleSubmit}
+        placeHolder={"Your Question"}
       />
     </Modal>
   );
 };
 
-export default EditModalQuestion;
+export default AddModalQuestion;

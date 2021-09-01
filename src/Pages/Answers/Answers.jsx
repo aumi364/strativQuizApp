@@ -1,29 +1,31 @@
-import React from "react";
-import { DummyQuestions } from "Pages/Utils/DummyQuestions";
+import React, { useState, useEffect } from "react";
+import useService from "Services/useService";
 import Answer from "./Answer";
 const Answers = () => {
-  const editHandler = (e) => {
-    return (e) => {
-      console.log("edit");
-    };
-  };
-  const deleteHandler = (e) => {
-    return (e) => {
-      console.log("delete");
-    };
-  };
-  const questions = DummyQuestions.map((element) => {
-    const { question, id } = element;
-    return (
-      <Answer
-        key={id}
-        editHandler={editHandler(id)}
-        deleteHandler={deleteHandler(id)}
-      >
-        {question}
-      </Answer>
-    );
-  });
+  const { getQuestions } = useService();
+  const [data, setData] = useState([]);
+  const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    const response = getQuestions();
+    setData(response);
+  }, [toggle]);
+
+  const questions = data
+    ? data.map((element, index) => {
+        index++;
+        const { question, id } = element;
+        return (
+          <Answer
+            key={id}
+            element={element}
+            toggle={toggle}
+            setToggle={setToggle}
+          >
+            {`${index}. ${question}`}
+          </Answer>
+        );
+      })
+    : [];
   return <div>{questions}</div>;
 };
 

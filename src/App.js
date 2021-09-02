@@ -1,11 +1,11 @@
 import AppRouter from "Route/AppRouter";
 import { AuthProvider } from "Context/AuthContext";
 import { ServiceProvider } from "Context/ServiceContext";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <AuthProvider>
           <ServiceProvider>
             <AppRouter />

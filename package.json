@@ -1,6 +1,6 @@
 {
   "name": "quizapp",
-  "homepage":"https://github.com/aumi364/strativQuizApp",
+  "homepage":"http://aumi364.github.io/strativQuizApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

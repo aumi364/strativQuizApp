@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/aumi364/strativQuizApp/static/css/main.27bbf326.chunk.css",
-    "main.js": "/aumi364/strativQuizApp/static/js/main.acf268c2.chunk.js",
-    "main.js.map": "/aumi364/strativQuizApp/static/js/main.acf268c2.chunk.js.map",
-    "runtime-main.js": "/aumi364/strativQuizApp/static/js/runtime-main.1ce6b5a9.js",
-    "runtime-main.js.map": "/aumi364/strativQuizApp/static/js/runtime-main.1ce6b5a9.js.map",
-    "static/css/2.55932136.chunk.css": "/aumi364/strativQuizApp/static/css/2.55932136.chunk.css",
-    "static/js/2.778a07b5.chunk.js": "/aumi364/strativQuizApp/static/js/2.778a07b5.chunk.js",
-    "static/js/2.778a07b5.chunk.js.map": "/aumi364/strativQuizApp/static/js/2.778a07b5.chunk.js.map",
-    "index.html": "/aumi364/strativQuizApp/index.html",
-    "static/css/2.55932136.chunk.css.map": "/aumi364/strativQuizApp/static/css/2.55932136.chunk.css.map",
-    "static/css/main.27bbf326.chunk.css.map": "/aumi364/strativQuizApp/static/css/main.27bbf326.chunk.css.map",
-    "static/js/2.778a07b5.chunk.js.LICENSE.txt": "/aumi364/strativQuizApp/static/js/2.778a07b5.chunk.js.LICENSE.txt"
+    "main.css": "/strativQuizApp/static/css/main.27bbf326.chunk.css",
+    "main.js": "/strativQuizApp/static/js/main.acf268c2.chunk.js",
+    "main.js.map": "/strativQuizApp/static/js/main.acf268c2.chunk.js.map",
+    "runtime-main.js": "/strativQuizApp/static/js/runtime-main.aef96f34.js",
+    "runtime-main.js.map": "/strativQuizApp/static/js/runtime-main.aef96f34.js.map",
+    "static/css/2.55932136.chunk.css": "/strativQuizApp/static/css/2.55932136.chunk.css",
+    "static/js/2.778a07b5.chunk.js": "/strativQuizApp/static/js/2.778a07b5.chunk.js",
+    "static/js/2.778a07b5.chunk.js.map": "/strativQuizApp/static/js/2.778a07b5.chunk.js.map",
+    "index.html": "/strativQuizApp/index.html",
+    "static/css/2.55932136.chunk.css.map": "/strativQuizApp/static/css/2.55932136.chunk.css.map",
+    "static/css/main.27bbf326.chunk.css.map": "/strativQuizApp/static/css/main.27bbf326.chunk.css.map",
+    "static/js/2.778a07b5.chunk.js.LICENSE.txt": "/strativQuizApp/static/js/2.778a07b5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ce6b5a9.js",
+    "static/js/runtime-main.aef96f34.js",
     "static/css/2.55932136.chunk.css",
     "static/js/2.778a07b5.chunk.js",
     "static/css/main.27bbf326.chunk.css",

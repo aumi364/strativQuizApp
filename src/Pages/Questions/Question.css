@@ -1,5 +1,6 @@
 .question {
-    padding: 1rem;
+    position: relative;
+    padding: 2rem 2.5rem;
     margin: .5rem;
     box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.2);
     transition: all 1s ease-in-out;
@@ -10,13 +11,24 @@
 
 }
 
+.icon-group {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+}
+
+.icon-danger:hover {
+    color: red
+}
+
 .question:hover {
     box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.4);
 }
 
 @media(min-width : 900px) {
     .question {
-        min-width: 400px;
+        min-width: 300px;
         max-width: 500px;
     }
 }

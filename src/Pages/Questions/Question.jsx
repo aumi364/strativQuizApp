@@ -11,7 +11,7 @@ const Question = ({ children, editHandler, deleteHandler }) => {
           <AiOutlineEdit onClick={editHandler} />
         </div>
         <div className="icon">
-          <AiOutlineDelete onClick={deleteHandler} />
+          <AiOutlineDelete className="icon-danger" onClick={deleteHandler} />
         </div>
       </div>
     </div>

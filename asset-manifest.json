@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/strativQuizApp/static/css/main.29776067.chunk.css",
-    "main.js": "/strativQuizApp/static/js/main.5c9a5401.chunk.js",
-    "main.js.map": "/strativQuizApp/static/js/main.5c9a5401.chunk.js.map",
+    "main.js": "/strativQuizApp/static/js/main.e1d1ab66.chunk.js",
+    "main.js.map": "/strativQuizApp/static/js/main.e1d1ab66.chunk.js.map",
     "runtime-main.js": "/strativQuizApp/static/js/runtime-main.aef96f34.js",
     "runtime-main.js.map": "/strativQuizApp/static/js/runtime-main.aef96f34.js.map",
     "static/css/2.55932136.chunk.css": "/strativQuizApp/static/css/2.55932136.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.55932136.chunk.css",
     "static/js/2.778a07b5.chunk.js",
     "static/css/main.29776067.chunk.css",
-    "static/js/main.5c9a5401.chunk.js"
+    "static/js/main.e1d1ab66.chunk.js"
   ]
 }

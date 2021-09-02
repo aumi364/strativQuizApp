@@ -20,7 +20,6 @@ const useService = () => {
     localStorage.setItem("data", JSON.stringify(data));
   };
   const addQuestion = (question) => {
-    console.log(question);
     data.push({ id: data.length + 1, question: question, answers: [] });
     localStorage.setItem("data", JSON.stringify(data));
   };

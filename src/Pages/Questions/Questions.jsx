@@ -13,6 +13,7 @@ const Questions = () => {
   const { deleteQuestion, getQuestions } = useService();
   const [toggle, setToggle] = useState(false);
   const [data, setData] = useState();
+
   useEffect(() => {
     const response = getQuestions();
     setData(response);
@@ -47,7 +48,7 @@ const Questions = () => {
       })
     : [];
   return (
-    <div className="questions-container">
+    <div className="c-container">
       <div className="questions">
         <div className="text-right">
           <button className="btn cbtn" onClick={openAddModal}>

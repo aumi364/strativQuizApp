@@ -1,21 +1,26 @@
-import Answers from "Pages/Answers/Answers";
+import Answers from "Pages/Answers/";
 import NoMatch from "Pages/Error/NoMatch";
 import Questions from "Pages/Questions/";
 import SignIn from "Pages/SignIn/SignIn";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
 const AppRouter = () => {
+  const { PrivateRoute } = ProtectedRoute();
+
   return (
     <Switch>
       <Route exact path="/">
         <SignIn />
       </Route>
-      <Route exact path="/questions">
+
+      <PrivateRoute admin exact path="/questions">
         <Questions />
-      </Route>
-      <Route exact path="/answers">
+      </PrivateRoute>
+
+      <PrivateRoute exact path="/answers">
         <Answers />
-      </Route>
+      </PrivateRoute>
       <Route path="*">
         <NoMatch />
       </Route>

@@ -13,6 +13,15 @@ code {
     monospace;
 }
 
+.c-container {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
 div.form-group {
   margin: 0
 }
@@ -54,4 +63,16 @@ div.form-group {
 .icon {
   cursor: pointer;
   margin-right: .2rem;
+}
+
+@media(min-width : 900px) {
+  .c-container {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+
 }

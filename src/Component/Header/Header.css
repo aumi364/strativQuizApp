@@ -4,23 +4,35 @@
     position: sticky;
     height: 50px;
     width: 100%;
-    background: rgb(19, 91, 150);
+    background-color: rgb(238, 242, 245) !important;
+    box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
+    z-index: 9999;
+
 }
 
 .cnav-link {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0 .25rem;
 }
 
 .cnav-link:hover {
-    color: rgb(175, 199, 182);
+    color: rgb(93, 160, 180);
     outline: none;
     text-decoration: none;
 }
 
-.cnav-link:focus {
-    color: rgb(176, 230, 89);
+.cnav-link:focus,
+.cnav-link:active {
+    color: rgb(87, 182, 115);
+}
+
+.logout-icon {
+    padding-top: .2rem;
+}
+
+.logout-icon:hover {
+    color: rgb(199, 19, 19)
 }

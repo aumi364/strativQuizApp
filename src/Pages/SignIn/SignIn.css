@@ -1,4 +1,10 @@
-.SignInContainer {
-    background: linear-gradient(rgb(33, 28, 49), rgb(1, 14, 24));
+.signin-container {
+    background: white;
+    color: black;
     padding: 2rem;
+    box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.3);
+}
+
+.btn.cbtn.login-button {
+    background: black;
 }

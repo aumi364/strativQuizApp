@@ -1,4 +1,4 @@
-import React, { createContext, useEffect } from "react";
+import React, { createContext } from "react";
 
 const QuestionsContext = createContext(null);
 export const QuestionsProvider = ({ children, toggler }) => {

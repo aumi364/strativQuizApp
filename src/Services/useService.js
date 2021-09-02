@@ -1,5 +1,3 @@
-import { DummyQuestions } from "Pages/Utils/DummyQuestions";
-
 const useService = () => {
   const data = JSON.parse(localStorage.getItem("data"));
 
@@ -27,6 +25,12 @@ const useService = () => {
     localStorage.setItem("data", JSON.stringify(data));
   };
 
-  return { getQuestions, editQuestion, deleteQuestion, addAnswer, addQuestion };
+  return {
+    getQuestions,
+    editQuestion,
+    deleteQuestion,
+    addAnswer,
+    addQuestion,
+  };
 };
 export default useService;

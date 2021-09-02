@@ -1,10 +1,10 @@
-.questions {
+.answers {
     box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.2);
 }
 
-@media(min-width : 900px) {
 
-    .questions {
+@media(min-width : 900px) {
+    .answers {
         padding: 1rem 2rem;
     }
 

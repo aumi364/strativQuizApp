@@ -3,10 +3,10 @@ import { DummyQuestions } from "Pages/Utils/DummyQuestions";
 const ServiceContext = createContext(null);
 export const ServiceProvider = ({ children }) => {
   const [data, setData] = useState();
-  //const [toggle, setToggle] = useState(false);
   useEffect(() => {
     if (DummyQuestions) {
       const localData = localStorage.getItem("data");
+      //checking localData's validity
       if (
         localData !== "undefined" &&
         localData !== null &&
@@ -14,7 +14,7 @@ export const ServiceProvider = ({ children }) => {
       ) {
         setData(JSON.parse(localData));
       } else {
-        localStorage.setItem("data", JSON.stringify(DummyQuestions));
+        localStorage.setItem("data", JSON.stringify(DummyQuestions)); //storeData from local file to loaclStorage
         window.location.reload();
       }
     }
@@ -24,7 +24,6 @@ export const ServiceProvider = ({ children }) => {
     <ServiceContext.Provider
       value={{
         questionsData: { data: data, setData: setData },
-        // toggler: setToggle,
       }}
     >
       {children}

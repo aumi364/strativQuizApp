@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import useService from "Services/useService";
 import Answer from "./Answer";
+
 const Answers = () => {
   const { getQuestions } = useService();
   const [data, setData] = useState([]);
   const [toggle, setToggle] = useState(false);
+
   useEffect(() => {
     const response = getQuestions();
     setData(response);
-  }, [toggle]);
+  }, [toggle]); // track changes for data from child component
 
   const questions = data
     ? data.map((element, index) => {
@@ -17,7 +19,7 @@ const Answers = () => {
         return (
           <Answer
             key={id}
-            element={element}
+            questionObj={element}
             toggle={toggle}
             setToggle={setToggle}
           >
@@ -25,8 +27,12 @@ const Answers = () => {
           </Answer>
         );
       })
-    : [];
-  return <div>{questions}</div>;
+    : []; // iterate through questions
+  return (
+    <div className="c-container">
+      <div className="answers">{questions}</div>
+    </div>
+  );
 };
 
 export default Answers;

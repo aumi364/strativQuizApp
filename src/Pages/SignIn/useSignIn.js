@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { Users } from "Pages/Utils/Users";
 import AuthContext from "Context/AuthContext";
 import { useHistory } from "react-router-dom";
 const useSignIn = () => {
   const [errors, setErrors] = useState();
-  const { status, toggler } = useContext(AuthContext);
+  const { status } = useContext(AuthContext);
+  const { setAuthStatus } = status;
   const history = useHistory();
 
   const checkAuth = (values) => {
@@ -15,11 +16,12 @@ const useSignIn = () => {
 
     if (result) {
       if (result.password === password) {
-        status({
+        const newAuthStatus = {
           isAuthenticated: true,
           isAdmin: result.isAdmin,
-        });
-        toggler(true);
+        };
+        setAuthStatus(newAuthStatus);
+        localStorage.setItem("status", JSON.stringify(newAuthStatus));
 
         if (result.isAdmin) {
           history.push("/questions");

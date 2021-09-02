@@ -1,5 +1,5 @@
 .answer {
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     position: relative;
     margin: .5rem;
     box-shadow: -5px 6px 45px -14px rgba(0, 0, 0, 0.2);
@@ -7,7 +7,7 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
-    width: 100%;
+
 
 }
 
@@ -24,9 +24,17 @@
 }
 
 .previous-answer {
+    font-size: .8rem;
     border-top: 1px solid rgb(100, 98, 98);
     color: rgb(100, 98, 98);
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
+}
+
+@media(min-width : 900px) {
+    .answer {
+        min-width: 400px;
+        max-width: 400px;
+    }
 }
